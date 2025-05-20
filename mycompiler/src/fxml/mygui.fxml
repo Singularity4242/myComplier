@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="464.0" prefWidth="706.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Controller">
+  <children>
+      <HBox prefHeight="45.0" prefWidth="706.0">
+         <children>
+            <ButtonBar prefHeight="22.0" prefWidth="440.0">
+               <buttons>
+                  <Button fx:id="openfile" alignment="CENTER" graphicTextGap="10.0" lineSpacing="10.0" mnemonicParsing="false" onAction="#openFile_Action" text="打开文件" textFill="#6e4040">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/0.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="word" alignment="CENTER" graphicTextGap="10.0" mnemonicParsing="false" onAction="#wordAnalyze_Action" opacity="0.71" prefHeight="26.0" prefWidth="95.0" text="词法分析" textFill="#6e4040">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/25.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="mean" alignment="CENTER" graphicTextGap="10.0" mnemonicParsing="false" onAction="#grammarAnalyze_Action" opacity="0.78" text="语法分析" textFill="#6e4040">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/75.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="mean" alignment="CENTER" graphicTextGap="10.0" mnemonicParsing="false" onAction="#meanAnalyze_Action" text="语义分析" textFill="#6e4040">
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/100.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </buttons>
+            </ButtonBar>
+         </children>
+      </HBox>
+      <HBox prefHeight="421.0" prefWidth="700.0">
+         <children>
+            <TextArea fx:id="text" editable="false" prefHeight="427.0" prefWidth="795.0" scrollLeft="3.0" scrollTop="3.0" style="-fx-border-color: pink; -fx-border-width: 3;" wrapText="true">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextArea>
+         </children>
+      </HBox>
+  </children>
+</VBox>

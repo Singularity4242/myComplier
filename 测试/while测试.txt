@@ -1,0 +1,9 @@
+#include "stdio.h"
+int main() { 
+     int m = 1 + 2 * 3;
+     int n = 4;
+    while(n<m){
+       n=n+1;
+    }
+    m=n*n;
+}

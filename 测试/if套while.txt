@@ -1,0 +1,13 @@
+#include "stdio.h"
+int main() { 
+     int aa = 1 + 2 * 3;
+     int xx = 4;
+     int bb = 2;
+     if(xx<aa){
+       while(bb > 0){
+          xx=xx+1;
+          bb=bb-1;
+       }
+      aa=xx*xx;
+    }   
+}
